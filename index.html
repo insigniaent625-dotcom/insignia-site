@@ -290,7 +290,7 @@ footer .legal{margin-top:56px;padding-top:22px;border-top:1px solid rgba(246,241
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('js',new Date());gtag('config','G-L2NM7P2ME7');
-var PIXEL_ID='';
+var PIXEL_ID='1164622329587291';
 if(PIXEL_ID){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init',PIXEL_ID);fbq('track','PageView')}
 function track(ga,fb,p){try{gtag('event',ga,p||{})}catch(e){}try{if(window.fbq)fbq('track',fb,p||{})}catch(e){}}
 </script>
@@ -516,7 +516,7 @@ show();
 // waitlist link
 var FORM_URL='';
 var wl=document.getElementById('wl'),msg=document.getElementById('msg');
-if(FORM_URL){wl.href=FORM_URL}else{wl.removeAttribute('target');wl.addEventListener('click',function(e){e.preventDefault();track('generate_lead','Lead',{method:'waitlist'});msg.textContent='The sign-up form opens soon. Meanwhile, write to insignia.ent625@gmail.com to join the list.'})}
+if(FORM_URL){wl.href=FORM_URL}else{wl.removeAttribute('target');wl.addEventListener('click',function(e){e.preventDefault();track('generate_lead','Lead',{method:'waitlist'});track('generate_lead','Lead',{method:'waitlist'});msg.textContent='The sign-up form opens soon. Meanwhile, write to insignia.ent625@gmail.com to join the list.'})}
 
 // ---------- Liquid Glass engine ----------
 var UA=navigator.userAgent;
